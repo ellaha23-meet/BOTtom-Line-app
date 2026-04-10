@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "Feedback": {
+      "title": "Feedback",
+      "description": "User feedback submitted from the app",
+      "type": "object",
+      "properties": {
+        "time_invested": { "type": "string", "description": "Time invested searching for AI tools" },
+        "frustration_level": { "type": "string", "description": "Frustration level keeping up with AI tools" },
+        "bias_opinion": { "type": "string", "description": "Opinion on chatbot bias" },
+        "usefulness": { "type": "string", "description": "Usefulness of the app" },
+        "recommend_likelihood": { "type": "string", "description": "Likelihood to recommend" },
+        "comments": { "type": "string", "description": "Additional comments" },
+        "timestamp": { "type": "timestamp", "description": "Time of submission" }
+      },
+      "required": ["timestamp"]
+    }
+  },
+  "firestore": {
+    "/feedback/{feedbackId}": {
+      "schema": { "$ref": "#/entities/Feedback" },
+      "description": "Stores user feedback submissions"
+    }
+  }
+}

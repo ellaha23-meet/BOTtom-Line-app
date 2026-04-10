@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: feedback
+    // Document ID: [auto-generated]
+    // Fields:
+    //   - time_invested: string (optional)
+    //   - frustration_level: string (optional)
+    //   - bias_opinion: string (optional)
+    //   - usefulness: string (optional)
+    //   - recommend_likelihood: string (optional)
+    //   - comments: string (optional, max 2000 chars)
+    //   - timestamp: timestamp (required)
+    //
+    // ===============================================================
+
+    function isValidFeedback() {
+      return request.resource.data.keys().hasOnly(['time_invested', 'frustration_level', 'bias_opinion', 'usefulness', 'recommend_likelihood', 'comments', 'timestamp']) &&
+             request.resource.data.keys().hasAll(['timestamp']) &&
+             request.resource.data.timestamp is timestamp &&
+             // Ensure the timestamp is roughly the current server time (within 5 minutes) to prevent backdating/future-dating
+             request.resource.data.timestamp > (request.time - duration.value(5, 'm')) &&
+             request.resource.data.timestamp < (request.time + duration.value(5, 'm')) &&
+             (!('time_invested' in request.resource.data) || (request.resource.data.time_invested is string && request.resource.data.time_invested.size() <= 50)) &&
+             (!('frustration_level' in request.resource.data) || (request.resource.data.frustration_level is string && request.resource.data.frustration_level.size() <= 50)) &&
+             (!('bias_opinion' in request.resource.data) || (request.resource.data.bias_opinion is string && request.resource.data.bias_opinion.size() <= 50)) &&
+             (!('usefulness' in request.resource.data) || (request.resource.data.usefulness is string && request.resource.data.usefulness.size() <= 50)) &&
+             (!('recommend_likelihood' in request.resource.data) || (request.resource.data.recommend_likelihood is string && request.resource.data.recommend_likelihood.size() <= 50)) &&
+             (!('comments' in request.resource.data) || (request.resource.data.comments is string && request.resource.data.comments.size() <= 2000));
+    }
+
+    match /feedback/{feedbackId} {
+      // Anyone can create feedback (App Check enforcement temporarily removed for preview environment)
+      allow create: if isValidFeedback();
+      allow read, update, delete: if false;
+    }
+  }
+}

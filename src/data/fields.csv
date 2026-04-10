@@ -1,0 +1,54 @@
+Field/Action,Rank,Tool Name,,URL
+Researching and synthesizing information,1,Claude,,https://www.anthropic.com/claude
+Researching and synthesizing information,2,Gemma 4,,https://deepmind.google/models/gemma/gemma-4/
+Researching and synthesizing information,3,ChatGPT,,https://chatgpt.com/
+Researching and synthesizing information,4,Gemini,,https://gemini.google.com
+Researching and synthesizing information,5,Perplexity AI ,,https://www.perplexity.ai/
+Drafting and refining written content,1,Claude,,https://www.anthropic.com/claude
+Drafting and refining written content,2,ChatGPT,,https://chatgpt.com/
+Drafting and refining written content,3,Gemma 4,,https://deepmind.google/models/gemma/gemma-4/
+Drafting and refining written content,4,Gemini,,https://gemini.google.com
+Drafting and refining written content,5,Wispr Flow,,https://ref.wisprflow.ai/tldr
+"Writing, debugging, and explaining code",1,Claude Code,,https://code.claude.com/docs/en/computer-use
+"Writing, debugging, and explaining code",2,ChatGPT,,https://chatgpt.com/
+"Writing, debugging, and explaining code",3,Cursor,,https://cursor.com/get-started?utm_source=google_paid&utm_campaign=[Search]%20[Brand]%20[EN]%20[Middle%20East]%20[Broad]%20[Max%20Conv]%20[Subscribes]%20Brand&utm_term=cursor&utm_medium=paid&utm_content=799680996223&cc_platform=google&cc_campaignid=23643846916&cc_adgroupid=194153900876&cc_adid=799680996223&cc_keyword=cursor&cc_matchtype=b&cc_device=c&cc_network=g&cc_placement=&cc_location=9198958&cc_adposition=&gad_source=1&gad_campaignid=23643846916&gbraid=0AAAABAkdGgSoncy0eu7eUL85E8MDSWwKA&gclid=CjwKCAjw-dfOBhAjEiwAq0RwI1tQh14RUeUjAwQrLxPZJ35q0y6akJrdzuqyYRobB0FWAUNcUGlWHRoCa9oQAvD_BwE
+"Writing, debugging, and explaining code",4,Grok,,https://x.ai/grok
+"Writing, debugging, and explaining code",5,Claude,,https://www.anthropic.com/claude
+Summarizing documents and meeting transcripts,1,Granola,,https://www.granola.ai/
+Summarizing documents and meeting transcripts,2,ChatGPT,,https://chatgpt.com/
+Summarizing documents and meeting transcripts,3,Fireflies,,https://fireflies.ai/ 
+Summarizing documents and meeting transcripts,4,Cohere Transcribe + Slackbot,,"https://huggingface.co/CohereLabs/cohere-transcr, https://slack.com/features/slackbot"
+Summarizing documents and meeting transcripts,5,Littlebird  ,,https://littlebird.ai/
+Analyzing and visualizing complex data,1,ChatGPT,,https://chatgpt.com/
+Analyzing and visualizing complex data,2,Gemma 4,,https://deepmind.google/models/gemma/gemma-4/
+Analyzing and visualizing complex data,3,Unwrap,,https://www.unwrap.ai/
+Analyzing and visualizing complex data,4,Claude,,https://www.anthropic.com/claude
+Analyzing and visualizing complex data,5,Attio,,https://attio.com
+"Generating and editing images, videos, and audio",1,ElevenLabs,,https://elevenlabs.io
+"Generating and editing images, videos, and audio",2,Lyria 3 Pro,,https://gemini.google/overview/music-generation/
+"Generating and editing images, videos, and audio",3,Runway,,https://runwayml.com
+"Generating and editing images, videos, and audio",4,Veo 3.1 Lite,,https://deepmind.google/models/veo/
+"Generating and editing images, videos, and audio",5,Midjourney + Sora,,"https://www.midjourney.com/home, https://openai.com/sora/ "
+Translating languages and practicing conversation,1,ChatGPT,,https://chatgpt.com/
+Translating languages and practicing conversation,2,Gemini 3.1 Flash Live,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/
+Translating languages and practicing conversation,3,Wispr Flow,,https://ref.wisprflow.ai/tldr
+Translating languages and practicing conversation,4,Gemini,,https://gemini.google.com
+Translating languages and practicing conversation,5,MAI-Transcribe-1 + DeepL,,"https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe, https://www.deepl.com/en/ai-labs"
+Brainstorming and creative ideation,1,ChatGPT,,https://chatgpt.com/
+Brainstorming and creative ideation,2,Claude,,https://www.anthropic.com/claude
+Brainstorming and creative ideation,3,Gemini,,https://gemini.google.com
+Brainstorming and creative ideation,4,Hermes Agent,,https://hermes-agent.nousresearch.com/
+Automating multi-step tasks (Agentic workflows),1,Claude Code,,https://code.claude.com/docs/en/computer-use
+Automating multi-step tasks (Agentic workflows),2,Slackbot,,https://slack.com/features/slackbot
+Automating multi-step tasks (Agentic workflows),3,Claude + Claude Cowork,,https://www.anthropic.com/claude
+Automating multi-step tasks (Agentic workflows),4,Zapier + OpenClaw,,"https://zapier.com/, https://openclaw.ai/"
+Automating multi-step tasks (Agentic workflows),5,Gemma 4 + Denovo,,"https://deepmind.google/models/gemma/gemma-4/, https://www.denovo.dev/ "
+Managing schedules and professional correspondence,1,Slackbot,,https://slack.com/features/slackbot
+Managing schedules and professional correspondence,2,Claude Cowork,,https://claude.ai/
+Managing schedules and professional correspondence,3,Claude,,https://www.anthropic.com/claude
+Managing schedules and professional correspondence,4,Atlassian Rovo,,https://www.atlassian.com/software/rovo
+Managing schedules and professional correspondence,5,ChatGPT,,https://chatgpt.com/
+UI/UX Design Generation,1,Figma,,https://www.figma.com/
+UI/UX Design Generation,2,Framer,,https://www.framer.com/
+UI/UX Design Generation,3,Google Stitch,,https://stitch.withgoogle.com/
+UI/UX Design Generation,4,Softr,,https://www.softr.io/build-with/tldr-product
